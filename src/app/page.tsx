@@ -1,6 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+// Dashboard Page ***
+
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -13,54 +15,75 @@ export default function Home() {
           height={20}
           priority
         />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
       </main>
     </div>
   );
 }
+
+/*
+
+**Route:** `/`
+
+**Purpose:** Overview of platform statistics and quick actions
+
+**Layout:**
+- Sidebar navigation
+- Top header with user menu
+- Main content area with cards and charts
+
+**Components:**
+- Statistics cards (4x2 grid)
+- Charts section (2x1 grid)
+- Recent activities list
+- Quick action buttons
+
+**Statistics Cards:**
+```
+┌─────────────┐ ┌─────────────┐
+│ Total       │ │ Active      │
+│ Identities  │ │ Identities  │
+│ 12,345      │ │ 11,890      │
+│ ↑ 5.2%      │ │ ↑ 3.1%      │
+└─────────────┘ └─────────────┘
+
+┌─────────────┐ ┌─────────────┐
+│ Suspended   │ │ Revoked     │
+│ Identities  │ │ Identities  │
+│ 245         │ │ 210         │
+│ ↓ 1.2%      │ │ ↓ 0.5%      │
+└─────────────┘ └─────────────┘
+
+┌─────────────┐ ┌─────────────┐
+│ Total       │ │ Active      │
+│ Orgs        │ │ Orgs        │
+│ 156         │ │ 142         │
+│ ↑ 2.1%      │ │ ↑ 1.8%      │
+└─────────────┘ └─────────────┘
+
+┌─────────────┐ ┌─────────────┐
+│ Total       │ │ Active      │
+│ Credentials │ │ Credentials │
+│ 45,678      │ │ 43,210      │
+│ ↑ 8.4%      │ │ ↑ 7.2%      │
+└─────────────┘ └─────────────┘
+```
+
+**Charts:**
+- Identity registrations (line chart, last 30 days)
+- Credential issuance trends (bar chart, by type)
+- Verification requests (pie chart, by status)
+- Organization growth (area chart, monthly)
+
+**Recent Activities:**
+- List of last 10 audit log entries
+- Show: User, Action, Resource, Timestamp
+
+**Quick Actions:**
+- [Create Identity]
+- [Create Organization]
+- [Issue Credential]
+- [View Key Recovery Requests]
+
+---
+
+*/

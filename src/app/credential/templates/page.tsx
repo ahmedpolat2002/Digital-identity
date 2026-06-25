@@ -1,0 +1,53 @@
+/**
+ * 
+**Route:** `/credential/templates`
+
+**Purpose:** Manage credential templates
+
+**Layout:**
+- List of templates
+- Create/Edit form
+- Schema editor
+
+**Table Columns:**
+```
+┌─────────────────────────────────────────────────────────────┐
+│ Name              │ Type      │ Version │ Validity │ Active│
+├─────────────────────────────────────────────────────────────┤
+│ National ID       │ NationalID│ 1       │ 365 days │ ✓    │
+│ Passport          │ Passport  │ 2       │ 1825 days│ ✓    │
+│ University Degree │ UnivDegree│ 1       │ 3650 days│ ✓    │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Create/Edit Form:**
+```
+┌─────────────────────────────────────────────────────────────┐
+│ Credential Template                                         │
+├─────────────────────────────────────────────────────────────┤
+│ Name: [______________________________]                       │
+│ Credential Type: [NationalID ▼]                            │
+│ Version: [1]                                               │
+│ Validity Period (days): [365]                              │
+│                                                              │
+│ Schema (JSON):                                             │
+│ {                                                           │
+│   "fullName": "string",                                    │
+│   "nationalNumber": "string",                               │
+│   "dateOfBirth": "date",                                   │
+│   "placeOfBirth": "string"                                 │
+│ }                                                           │
+│                                                              │
+│ Required Claims:                                           │
+│ [✓] fullName                                               │
+│ [✓] nationalNumber                                         │
+│ [✓] dateOfBirth                                            │
+│ [ ] placeOfBirth                                            │
+│                                                              │
+│ [Save] [Cancel]                                            │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+ */

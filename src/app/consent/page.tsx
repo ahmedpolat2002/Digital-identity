@@ -1,0 +1,32 @@
+/**
+ *Consent Management
+
+**Route:** `/consent`
+
+**Purpose:** Manage consent grants
+
+**Tabs:**
+1. Pending
+2. Granted
+3. Revoked
+4. Expired
+
+**Table Columns:**
+```
+┌─────────────────────────────────────────────────────────────┐
+│ Requester │ Resource │ Actions  │ Attributes│ Status │ Valid │
+├─────────────────────────────────────────────────────────────┤
+│ Bank XYZ  │ Account  │ Read     │ Balance   │ Pending│ 30d  │
+│ University│ Academic │ Read     │ GPA       │ Granted│ 365d │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Actions:**
+- Approve (pending)
+- Deny (pending)
+- Revoke (granted)
+- View details
+
+---
+
+ */

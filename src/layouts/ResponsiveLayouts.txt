@@ -1,0 +1,24 @@
+## Responsive Layout Guidelines
+
+### Breakpoints
+
+**Mobile:** 0px - 768px
+- Single column layout
+- Bottom navigation (mobile)
+- Hamburger menu
+- Touch-optimized controls
+
+**Tablet:** 769px - 1024px
+- Two-column layout where appropriate
+- Sidebar navigation (collapsible)
+- Optimized for touch
+
+**Desktop:** 1025px - 1440px
+- Multi-column layout
+- Full sidebar navigation
+- Mouse-optimized controls
+
+**Large Desktop:** 1441px+
+- Maximum content width: 1400px
+- Centered layout
+- Enhanced spacing

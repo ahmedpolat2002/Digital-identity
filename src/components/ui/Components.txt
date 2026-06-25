@@ -1,0 +1,93 @@
+Component Specifications
+
+### Button
+
+**Variants:**
+- Primary
+- Secondary
+- Outlined
+- Text
+- Danger
+
+**Sizes:**
+- Small
+- Medium
+- Large
+
+**States:**
+- Default
+- Hover
+- Active
+- Disabled
+- Loading
+
+### Card
+
+**Variants:**
+- Elevated
+- Outlined
+- Filled
+
+**Content:**
+- Header (optional)
+- Body
+- Footer (optional)
+
+### Input Field
+
+**Types:**
+- Text
+- Email
+- Password
+- Number
+- Date
+- Select
+- Multiline
+
+**States:**
+- Default
+- Focused
+- Error
+- Disabled
+
+### Dialog
+
+**Types:**
+- Alert
+- Confirmation
+- Form
+- Full-screen
+
+**Components:**
+- Title
+- Content
+- Actions
+- Close button
+
+### Table
+
+**Features:**
+- Sortable columns
+- Filterable
+- Pagination
+- Row selection
+- Expandable rows
+- Sticky header
+
+### Badge
+
+**Variants:**
+- Default
+- Primary
+- Success
+- Warning
+- Error
+
+### Progress Indicator
+
+**Types:**
+- Linear
+- Circular
+- Skeleton
+
+---

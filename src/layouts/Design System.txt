@@ -1,0 +1,88 @@
+Design System
+
+### Colors
+
+**Primary Colors:**
+- Primary: #1976D2 (Blue)
+- Primary Dark: #0D47A1
+- Primary Light: #42A5F5
+
+**Secondary Colors:**
+- Secondary: #FF9800 (Orange)
+- Secondary Dark: #E65100
+- Secondary Light: #FFB74D
+
+**Status Colors:**
+- Success: #4CAF50 (Green)
+- Warning: #FFC107 (Amber)
+- Error: #F44336 (Red)
+- Info: #2196F3 (Light Blue)
+
+**Neutral Colors:**
+- Background: #FFFFFF
+- Surface: #F5F5F5
+- Text Primary: #212121
+- Text Secondary: #757575
+- Divider: #E0E0E0
+
+### Typography
+
+**Font Family:**
+- Primary: Roboto (Android), San Francisco (iOS), Segoe UI (Windows)
+- Monospace: Roboto Mono, Consolas, Monaco
+
+**Font Sizes:**
+- Display Large: 57sp/px
+- Display Medium: 45sp/px
+- Display Small: 36sp/px
+- Headline Large: 32sp/px
+- Headline Medium: 28sp/px
+- Headline Small: 24sp/px
+- Title Large: 22sp/px
+- Title Medium: 16sp/px
+- Title Small: 14sp/px
+- Body Large: 16sp/px
+- Body Medium: 14sp/px
+- Body Small: 12sp/px
+- Label Large: 14sp/px
+- Label Medium: 12sp/px
+- Label Small: 11sp/px
+
+### Spacing
+
+**Scale:** 4px base unit
+- XS: 4px
+- SM: 8px
+- MD: 16px
+- LG: 24px
+- XL: 32px
+- XXL: 48px
+
+### Border Radius
+
+- Small: 4px
+- Medium: 8px
+- Large: 12px
+- XL: 16px
+- Full: 9999px (pill)
+
+### Shadows
+
+- Elevation 1: 0 1px 3px rgba(0,0,0,0.12)
+- Elevation 2: 0 3px 6px rgba(0,0,0,0.16)
+- Elevation 3: 0 10px 20px rgba(0,0,0,0.19)
+- Elevation 4: 0 14px 28px rgba(0,0,0,0.25)
+
+### Icons
+
+**Icon Set:**
+- Material Design Icons (React)
+- Material Icons (Flutter)
+
+**Icon Sizes:**
+- Small: 16px
+- Medium: 24px
+- Large: 32px
+- XL: 48px
+
+---

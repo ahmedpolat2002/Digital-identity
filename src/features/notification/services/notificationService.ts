@@ -24,3 +24,5 @@ export class NotificationService {
     return apiService.post<void>("/notification/mark-all-read", {});
   }
 }
+
+export const notificationService = new NotificationService();

@@ -22,3 +22,5 @@ export class ConsentService {
     return apiService.post<ConsentGrantDto>(`/consent/${id}/revoke`, command);
   }
 }
+
+export const consentService = new ConsentService();

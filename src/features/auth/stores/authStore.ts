@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { authService } from "../services/authService";
+import { useEffect } from "react";
 
 interface AuthState {
   user: { id: string; email: string; role: string } | null;
@@ -103,6 +104,25 @@ export const useAuthStore = create<AuthState>()(
     },
   ),
 );
+
+export const useAutoRefresh = () => {
+  const { refreshTokenFn, logout } = useAuthStore();
+
+  useEffect(() => {
+    const refreshInterval = setInterval(
+      async () => {
+        try {
+          await refreshTokenFn();
+        } catch (error) {
+          logout();
+        }
+      },
+      14 * 60 * 1000,
+    ); // Refresh every 14 minutes
+
+    return () => clearInterval(refreshInterval);
+  }, [refreshTokenFn, logout]);
+};
 
 async function generateDeviceFingerprint(): Promise<string> {
   // Simple device fingerprint generation

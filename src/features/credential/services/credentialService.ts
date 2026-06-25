@@ -18,3 +18,5 @@ export class CredentialService {
     return apiService.post<CredentialDto>(`/credential/${id}/revoke`, command);
   }
 }
+
+export const credentialService = new CredentialService();

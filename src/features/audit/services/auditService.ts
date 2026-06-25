@@ -24,3 +24,5 @@ export class AuditService {
     return response;
   }
 }
+
+export const auditService = new AuditService();

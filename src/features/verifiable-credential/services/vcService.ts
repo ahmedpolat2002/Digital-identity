@@ -14,3 +14,5 @@ export class VerifiableCredentialService {
     );
   }
 }
+
+export const vcService = new VerifiableCredentialService();

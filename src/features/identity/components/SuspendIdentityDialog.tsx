@@ -1,5 +1,5 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { identityService } from "../features/identity/services/identityService";
+import { identityService } from "../services/identityService";
 import {
   Button,
   Dialog,

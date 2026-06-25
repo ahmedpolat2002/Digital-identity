@@ -1,4 +1,4 @@
-import { useIdentities } from "@/features/identity/useIdentities";
+import { useIdentities } from "@/features/identity/hooks/useIdentities";
 import { CircularProgress } from "@mui/material";
 import { useState } from "react";
 
